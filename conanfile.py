@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 class natsasioConan(ConanFile):
     name = "nats_asio"
-    version = "0.1"
+    version = "0.0.5"
     commit = version
     license = "MIT"
     author = "Vladislav Troinich antlad@icloud.com"
@@ -23,7 +23,7 @@ class natsasioConan(ConanFile):
     )
 
     def source(self):
-        self.run("git clone https://github.com/antlad/nats_asio.git")
+        self.run("git clone https://github.com/antlad/nats_asio.git && cd nats_asio && git checkout {}".format(self.version))
 
     def build(self):
         cmake = CMake(self)
