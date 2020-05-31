@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 
 class natsasioConan(ConanFile):
     name = "nats_asio"
-    version = "0.0.9"
+    version = "0.0.10"
     commit = version
     license = "MIT"
     author = "Vladislav Troinich antlad@icloud.com"
@@ -16,7 +16,7 @@ class natsasioConan(ConanFile):
     build_policy = "missing"
     requires = (
         "boost/1.71.0@conan/stable",
-        "fmt/6.1.2",
+        "fmt/6.2.0",
         "spdlog/1.5.0",
         "OpenSSL/1.1.1c@conan/stable",
         "jsonformoderncpp/3.7.2@vthiery/stable"
