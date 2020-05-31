@@ -9,7 +9,7 @@ class natsasioConan(ConanFile):
     url = "https://github.com/antlad/nats_asio"
     description = "Async client for NATS using boost asio"
     topics = ("opcua")
-    settings = "os", "compiler", "build_type", "arch"
+    settings = "cppstd", "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = {"shared": False}
     generators = "cmake"
