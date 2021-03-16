@@ -3,7 +3,7 @@ from conans import ConanFile, CMake, tools
 
 class natsasioConan(ConanFile):
     name = "nats_asio"
-    version = "0.0.12"
+    version = "0.0.13"
     commit = version
     license = "MIT"
     author = "Vladislav Troinich antlad@icloud.com"
